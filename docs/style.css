@@ -11,6 +11,36 @@ body {
   text-align: center;
 }
 
+/* Header Styling */
+#header {
+  background-color: #eb78b2;
+  color: white;
+  padding: 15px 0;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.8em;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+#clock {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: white;
+  background-color: #e791bd;
+  padding: 10px;
+  border-radius: 6px;
+  display: inline-block;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
 /* Styling for the container of the todo list */
 .container {
   background-color: white;
@@ -167,7 +197,7 @@ body {
 }
 
 #todoSection button {
-  width: 80%;
+  width: 40%;
   padding: 12px;
   background-color: #f00b98;
   color: white;
@@ -182,18 +212,9 @@ body {
   background-color: #ff8be6;
 }
 
-/* Header Styling */
-h1 {
-  color: #d5006d;
-  font-size: 2.5em;
-  margin-bottom: 10px;
-  font-weight: bold;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-}
-
 /* Input Field */
 input {
-  width: 80%;
+  width: 20%;
   padding: 12px;
   margin-top: 10px;
   border-radius: 6px;

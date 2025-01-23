@@ -8,6 +8,11 @@
 </head>
 <body>
 
+  <!-- Header Section with Clock -->
+  <header id="header">
+    <div id="clock"></div> <!-- This is where the clock will be displayed -->
+  </header>
+
   <div class="container">
     <h1>To-Do List</h1>
 
@@ -29,9 +34,7 @@
       <button onclick="signIn()">Sign In</button>
       <p>Don't have an account? <a href="javascript:void(0);" onclick="showSignUpForm()">Sign Up</a></p>
       <p><a href="javascript:void(0);" onclick="showForgotPasswordForm()">Forgot Password?</a></p>
-      
     </div>
-
 
     <!-- Forgot Password Form -->
     <div id="forgotPasswordForm" style="display: none;">
@@ -58,5 +61,6 @@
   </footer>
 
   <script src="script.js"></script>
+
 </body>
 </html>
