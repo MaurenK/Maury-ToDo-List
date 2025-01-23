@@ -73,4 +73,7 @@ Task Priority: Add task priority levels (e.g., High, Medium, Low).
 Recurring Tasks: Implement the ability to set recurring tasks.
 Dark Mode: Implement a dark mode toggle.
 Better Styling: Improve the design with animations and transitions.
+
+## Link of the project
+https://maurenk.github.io/Maury-ToDo-List/
  
