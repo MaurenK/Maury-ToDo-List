@@ -61,16 +61,16 @@ The reminder will trigger an alert and a browser notification once the specified
 ## 5. Clock
 The current time is displayed in the top header, updating every second.
 Technologies Used
-## HTML5: For structuring the content.
-## CSS3: For styling and layout.
-## JavaScript: For functionality (user authentication, task management, reminders, clock).
-## LocalStorage: For storing tasks and user data.
+HTML5: For structuring the content.
+CSS3: For styling and layout.
+JavaScript: For functionality (user authentication, task management, reminders, clock).
+LocalStorage: For storing tasks and user data.
 
 ## To-Do List Section
 
-## Future Enhancements
-## Task Priority: Add task priority levels (e.g., High, Medium, Low).
-## Recurring Tasks: Implement the ability to set recurring tasks.
-## Dark Mode: Implement a dark mode toggle.
-## Better Styling: Improve the design with animations and transitions.
+Future Enhancements
+Task Priority: Add task priority levels (e.g., High, Medium, Low).
+Recurring Tasks: Implement the ability to set recurring tasks.
+Dark Mode: Implement a dark mode toggle.
+Better Styling: Improve the design with animations and transitions.
  
