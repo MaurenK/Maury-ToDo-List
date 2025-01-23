@@ -28,4 +28,4 @@ This is a simple To-Do list web application built using HTML, CSS, and JavaScrip
 3. You can add tasks to the list by typing in the input field and pressing the **Add Task** button.
 
    ## Here's the link to accessing the ToDo List
- https://maurenk.github.io/Maury-ToDo-List/
+ 
