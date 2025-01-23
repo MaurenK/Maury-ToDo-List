@@ -1,0 +1,305 @@
+/* Basic styling for the whole page */
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background-color: #ffe6f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  flex-direction: column; /* Allow for footer placement below content */
+  text-align: center;
+}
+
+/* Styling for the container of the todo list */
+.container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 600px; /* Adjusted width */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: bounceIn 0.5s ease-out;
+}
+
+.container:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Sign Up Form Container */
+#signUpForm {
+  background-color: #ffe6f1;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#signUpForm h2 {
+  color: #ff66b2;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+#signUpForm input {
+  width: 50%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 2px solid #ff66b2;
+  font-size: 1em;
+}
+
+#signUpForm button {
+  width: 50%;
+  padding: 12px;
+  background-color: #ff66b2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 15px;
+}
+
+#signUpForm button:hover {
+  background-color: #ff3385;
+}
+
+/* Sign In Form Container */
+#signInForm {
+  background-color: #ffe6f3;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#signInForm h2 {
+  color: #ff66bf;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+#signInForm input {
+  width: 50%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 2px solid #ff66cc;
+  font-size: 1em;
+}
+
+#signInForm button {
+  width: 50%;
+  padding: 12px;
+  background-color: #ff66ff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 15px;
+}
+
+#signInForm button:hover {
+  background-color: #ff33f5;
+}
+
+/* Forgot Password Form Container */
+#forgotPasswordForm {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#forgotPasswordForm h2 {
+  color: #d5006d;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+#forgotPasswordForm input {
+  width: 80%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 2px solid #d5006d;
+  font-size: 1em;
+}
+
+#forgotPasswordForm button {
+  width: 80%;
+  padding: 12px;
+  background-color: #d5006d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 15px;
+}
+
+#forgotPasswordForm button:hover {
+  background-color: #e60073;
+}
+
+/* To-Do List Section Container */
+#todoSection {
+  background-color: #eceaec;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#todoSection .task-input {
+  margin-bottom: 20px;
+}
+
+#todoSection .task-input input {
+  width: 80%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 2px solid #f6f5f8;
+  font-size: 1em;
+}
+
+#todoSection button {
+  width: 80%;
+  padding: 12px;
+  background-color: #f00b98;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 15px;
+}
+
+#todoSection button:hover {
+  background-color: #ff8be6;
+}
+
+/* Header Styling */
+h1 {
+  color: #d5006d;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Input Field */
+input {
+  width: 80%;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 6px;
+  border: 2px solid #ff66b2;
+  outline: none;
+  font-size: 1em;
+}
+
+input:focus {
+  border-color: #ff3385;
+}
+
+/* Button Styling */
+button {
+  width: 80%;
+  padding: 12px;
+  background-color: #ff66b2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 15px;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff3385;
+}
+
+/* Add cute animation to list items */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  background-color: #fff0f5;
+  margin: 8px 0;
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow-wrap: anywhere;
+  max-width: 100%;
+  width: 800px;
+}
+
+li:hover {
+  transform: translateX(5px);
+}
+
+/* Style for the checkbox */
+li input[type="checkbox"] {
+  margin-right: 10px;  /* Adjusts the space between the checkbox and the task text */
+}
+
+/* Delete Button Styling */
+li button.delete-btn {
+  font-size: 0.9em;    /* Smaller font size */
+  background-color: #ff66b2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 6px;
+  width: 2px; /* Reduced width */
+  padding: 2px; /* Adjusted padding */
+}
+
+li button.delete-btn:hover {
+  background-color: #ff3385;
+  width: 5px; /* Reduced width */
+  padding: 2px; /* Adjusted padding */
+  margin-left: 0; /* Move to the left */
+}
+
+/* Footer Styling */
+footer {
+  width: 100%;
+  background-color: #ff66b2;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 1em;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Keyframe Animations */
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}

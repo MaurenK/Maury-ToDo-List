@@ -1,0 +1,12 @@
+[
+    {
+      "taskName": "Buy groceries",
+      "dueDate": "2025-01-22",
+      "status": "incomplete"
+    },
+    {
+      "taskName": "Clean the house",
+      "dueDate": "2025-01-23",
+      "status": "incomplete"
+    }
+]

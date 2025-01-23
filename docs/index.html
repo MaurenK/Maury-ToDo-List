@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>To-Do List</h1>
+
+    <!-- Sign Up Form -->
+    <div id="signUpForm">
+      <h2>Sign Up</h2>
+      <input type="text" id="signUpUsername" placeholder="Username" required>
+      <input type="email" id="signUpEmail" placeholder="Email" required>
+      <input type="password" id="signUpPassword" placeholder="Password" required>
+      <button onclick="signUp()">Sign Up</button>
+      <p>Already have an account? <a href="javascript:void(0);" onclick="showSignInForm()">Sign In</a></p>
+    </div>
+
+    <!-- Sign In Form -->
+    <div id="signInForm" style="display: none;">
+      <h2>Sign In</h2>
+      <input type="text" id="signInUsername" placeholder="Username" required>
+      <input type="password" id="signInPassword" placeholder="Password" required>
+      <button onclick="signIn()">Sign In</button>
+      <p>Don't have an account? <a href="javascript:void(0);" onclick="showSignUpForm()">Sign Up</a></p>
+      <p><a href="javascript:void(0);" onclick="showForgotPasswordForm()">Forgot Password?</a></p>
+      
+    </div>
+
+
+    <!-- Forgot Password Form -->
+    <div id="forgotPasswordForm" style="display: none;">
+      <h2>Forgot Password</h2>
+      <input type="email" id="forgotPasswordEmail" placeholder="Enter your email" required>
+      <button onclick="resetPassword()">Reset Password</button>
+      <p><a href="javascript:void(0);" onclick="showSignInForm()">Back to Sign In</a></p>
+    </div>
+
+    <!-- To-Do List Section -->
+    <div id="todoSection" style="display: none;">
+      <div class="task-input">
+        <input type="text" id="todoInput" placeholder="Enter your task">
+        <input type="date" id="dueDate" placeholder="Select due date">
+        <button id="addBtn">Add Task</button>
+      </div>
+      <ul id="todoList"></ul>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2025. Mauren_K. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
