@@ -1,4 +1,4 @@
-/* Basic styling for the whole page */
+/* Basic Styling */
 body {
   font-family: 'Comic Sans MS', cursive, sans-serif;
   background-color: #ffe6f1;
@@ -7,7 +7,7 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  flex-direction: column; /* Allow for footer placement below content */
+  flex-direction: column;
   text-align: center;
 }
 
@@ -47,7 +47,8 @@ body {
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  width: 600px; /* Adjusted width */
+  width: 90%; /* Default width for small screens */
+  max-width: 600px; /* Maximum width */
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   animation: bounceIn 0.5s ease-out;
@@ -73,7 +74,7 @@ body {
 }
 
 #signUpForm input {
-  width: 50%;
+  width: 80%; /* Adjust width to fit on smaller screens */
   padding: 12px;
   margin: 10px 0;
   border-radius: 6px;
@@ -82,7 +83,7 @@ body {
 }
 
 #signUpForm button {
-  width: 50%;
+  width: 80%; /* Adjust button width */
   padding: 12px;
   background-color: #ff66b2;
   color: white;
@@ -112,7 +113,7 @@ body {
 }
 
 #signInForm input {
-  width: 50%;
+  width: 80%;
   padding: 12px;
   margin: 10px 0;
   border-radius: 6px;
@@ -121,7 +122,7 @@ body {
 }
 
 #signInForm button {
-  width: 50%;
+  width: 80%;
   padding: 12px;
   background-color: #ff66ff;
   color: white;
@@ -197,7 +198,7 @@ body {
 }
 
 #todoSection button {
-  width: 40%;
+  width: 80%; /* Button width adjusts on mobile */
   padding: 12px;
   background-color: #f00b98;
   color: white;
@@ -212,102 +213,77 @@ body {
   background-color: #ff8be6;
 }
 
-/* Input Field */
-input {
-  width: 20%;
-  padding: 12px;
-  margin-top: 10px;
-  border-radius: 6px;
-  border: 2px solid #ff66b2;
-  outline: none;
-  font-size: 1em;
+/* Media Queries for responsiveness */
+
+/* For devices smaller than 768px (e.g., tablets and mobile phones) */
+@media only screen and (max-width: 768px) {
+  #header {
+    flex-direction: column;
+    font-size: 1.5em;
+  }
+
+  #header h1 {
+    font-size: 2em;
+  }
+
+  #clock {
+    font-size: 1em;
+  }
+
+  .container {
+    width: 95%;
+    padding: 10px;
+  }
+
+  /* Adjust input and buttons for smaller screens */
+  #signUpForm input,
+  #signInForm input,
+  #forgotPasswordForm input,
+  #todoSection .task-input input,
+  #todoSection button {
+    width: 80%;
+  }
+
+  button {
+    width: 80%;
+  }
+
+  /* Adjust task list styling */
+  li {
+    width: 100%; /* Make sure list items fit small screens */
+  }
+
+  li button.delete-btn {
+    width: 25%;
+  }
 }
 
-input:focus {
-  border-color: #ff3385;
-}
+/* For very small screens like mobile phones (max-width: 480px) */
+@media only screen and (max-width: 480px) {
+  #header {
+    font-size: 1.2em;
+    padding: 10px 5px;
+  }
 
-/* Button Styling */
-button {
-  width: 80%;
-  padding: 12px;
-  background-color: #ff66b2;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  margin-top: 15px;
-  font-size: 1em;
-  transition: background-color 0.3s ease;
-}
+  #header h1 {
+    font-size: 1.8em;
+  }
 
-button:hover {
-  background-color: #ff3385;
-}
+  #clock {
+    font-size: 1em;
+  }
 
-/* Add cute animation to list items */
-ul {
-  list-style-type: none;
-  padding: 0;
-  margin-top: 20px;
-}
+  .container {
+    width: 100%;
+  }
 
-li {
-  background-color: #fff0f5;
-  margin: 8px 0;
-  padding: 12px;
-  border-radius: 8px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  overflow-wrap: anywhere;
-  max-width: 100%;
-  width: 800px;
-}
+  input, button {
+    width: 90%;
+  }
 
-li:hover {
-  transform: translateX(5px);
-}
-
-/* Style for the checkbox */
-li input[type="checkbox"] {
-  margin-right: 10px;  /* Adjusts the space between the checkbox and the task text */
-}
-
-/* Delete Button Styling */
-li button.delete-btn {
-  font-size: 0.9em;    /* Smaller font size */
-  background-color: #ff66b2;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  margin-left: 6px;
-  width: 2px; /* Reduced width */
-  padding: 2px; /* Adjusted padding */
-}
-
-li button.delete-btn:hover {
-  background-color: #ff3385;
-  width: 5px; /* Reduced width */
-  padding: 2px; /* Adjusted padding */
-  margin-left: 0; /* Move to the left */
-}
-
-/* Footer Styling */
-footer {
-  width: 100%;
-  background-color: #ff66b2;
-  color: white;
-  text-align: center;
-  padding: 15px 0;
-  font-size: 1em;
-}
-
-footer p {
-  margin: 0;
+  li {
+    font-size: 0.9em;
+  }
 }
 
 /* Keyframe Animations */
